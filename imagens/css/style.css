@@ -1,0 +1,174 @@
+:root {
+    --primary-color: #FF7833;
+    --secondary-color: #31333B;
+    --border-bottom-header: #444856;
+    --secondary-color-dark: #23252d;
+
+    --default-gap: 3rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    font-family: sans-serif;
+    background-color: var(--secondary-color);
+}
+
+.main-header {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    background-color: var(--secondary-color-dark);
+}
+
+.main-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    text-align: right;
+    width: 100%;
+    min-width: 250px;
+    padding: 1.4em;
+}
+
+.main-nav img {
+    margin-top: 3em;
+    width: 100px;
+}
+
+.main-nav li a {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: gainsboro;
+}
+
+.main-nav ul li {
+    padding: 1.45em 0;
+    border-bottom: 1px solid var(--border-bottom-header);
+    list-style-type: none;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+}
+
+.main-nav ul li:hover {
+    background-color: rgba(0, 0, 0, .3);
+}
+
+h1 {
+    color: var(--border-bottom-header);
+    font-size: 3em;
+    letter-spacing: 4px;
+}
+h2 {
+    color: var(--primary-color);
+    font-size: 1.8em;
+    margin-top: 2em;
+}
+
+.main {
+    padding-left: 4em;
+    padding-top: 6em;
+    padding: 6em 0 0em 4em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    margin-top: .5em;
+}
+
+.row div {
+    gap: 2em;
+}
+
+label {
+    font-size: 1.2em;
+    color: gainsboro;
+    padding-top: 1em;
+}
+
+input {
+    display: flex;
+    padding: 1em;
+    border-radius: 8px;
+}
+
+.btn {
+    border: 2px solid black;
+    text-align: center;
+    color: gainsboro;
+    background-color: var(--secondary-color-dark);
+    cursor: pointer;
+    justify-content: center;
+}
+
+textarea {
+    resize: none;
+    padding-left: .75em;
+    padding-top: .50em;
+    padding: .5em 0 0 .75em;
+    border-radius: 8px;
+    margin-bottom: 2em;
+}
+
+label, input, textarea {
+    border: none;
+    outline: none;
+}
+
+address {
+    margin-top: 1em;
+    margin-left: 2em;
+}
+
+address p {
+    font-size: 1.2em;
+    letter-spacing: 1.8px;
+    color: gainsboro;
+    line-height: 3;
+}
+
+select {
+    width: 50%;
+    padding: 1em;
+    border: 0;
+    outline: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+option {
+    padding: 1em;
+    
+}
+
+.form-quiz input[type="radio"] {
+    display: inline;
+}
+
+.form-quiz input[type="checkbox"] {
+    display: inline;
+}
+
+.form-quiz input[type="reset"] {
+    display: inline-block;
+    width: calc(26% - 3em);
+    margin-bottom: 6em;
+    cursor: pointer;
+}
+
+.form-quiz input[type="submit"] {
+    display: inline-block;
+    width: calc(26% - 3em);
+    margin-left: 3em;
+    margin-bottom: 6em;
+}
